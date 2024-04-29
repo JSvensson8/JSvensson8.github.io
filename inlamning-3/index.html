@@ -1,0 +1,133 @@
+<!--
+    Kurs: Webbutveckling 1
+    Uppgift: Inlämning 3
+    Av: Josefin Svensson
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Blomstermålabladet</title>
+    </head>
+
+    <body>
+        <h1>
+            Inlämningsuppgift 3
+        </h1>
+        <form method="get" action="http://webshare.mah.se/tszagh/response.php">
+            <!--KONTAKTUPPGIFTER-->
+            <fieldset>
+                <legend>
+                    Konktakuppgifter
+                </legend>
+                <div>
+                    <label for="name">Namn:</label>
+                    <input type="text" id="name" name="name" placeholder="Namn här..." required>
+                </div>
+                <div>
+                    <label for="age">Ålder:</label>
+                    <input type="number" id="age" name="age" placeholder="Ålder här..." required>
+                </div>
+            </fieldset>
+            <!--BESÖKSUPPGIFTER-->
+            <fieldset>
+                <legend>
+                    Dina besök på blomstermålabladet
+                </legend>
+                <p>Hur ofta besöker du Blomstermålabladet?</p>
+                <div>
+                    <input type="radio" id="every_day" name="freq" value="every day" required>
+                    <label for="every_day">Varje dag</label>
+                </div>
+                <div>
+                    <input type="radio" id="every_other_day" name="freq" value="every other day">
+                    <label for="every_other_day">Varannan dag</label>
+                </div>
+                <div>
+                    <input type="radio" id="every_week" name="freq" value="every week">
+                    <label for="every_week">Varje vecka</label>
+                </div>
+                <p>
+                    Vilka delar av Blomstermålabladet brukar du besöka?
+                </p>
+                <div>
+                    <input type="checkbox" id="news" name="visits[]" value="news">
+                    <label for="news">Nyheter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="foreign" name="visits[]" value="foreign">
+                    <label for="foreign">Utrikes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="domestic" name="visits[]" value="domestic">
+                    <label for="domestic">Inrikes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sport" name="visits[]" value="sport">
+                    <label for="sport">Sport</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="gossip" name="visits[]" value="gossip">
+                    <label for="gossip">Skvaller</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="weather" name="visits[]" value="weather">
+                    <label for="weather">Väder</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="other" name="visits[]" value="other">
+                    <label for="other">Övrigt</label>
+                </div>
+            </fieldset>
+            <!--TÄVLING-->
+            <fieldset>
+                <legend>
+                    Vinn en T-shirt!
+                </legend>
+                <p>
+                    Ni har möjighet att vinna en T-shirt om ni fyller i följande information:
+                </p>
+                <p>
+                    Bästa med Blomstermålabladet:
+                </p>
+                <textarea name="best"></textarea>
+                <p>
+                    Sämsta med Blomstermålabladet:
+                </p>
+                <textarea name="worst"></textarea>
+                <div>
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" placeholder="ex. josefin@mah.se" required>
+                </div>
+                <div>
+                    <label for="size">Storlek:</label>
+                    <select id="size" name="size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m" selected>M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                </div>
+            </fieldset>
+            <!--SKICKA/ÅTERSTÄLL-->
+            <fieldset>
+                <legend>
+                    Skicka/Återställ
+                </legend>
+                <div>
+                    <button type="submit">
+                        Skicka
+                    </button>
+                    <button type="reset">
+                        Återställ
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+
+    </body>
+
+</html>

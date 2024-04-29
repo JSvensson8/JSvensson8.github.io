@@ -1,0 +1,148 @@
+
+body{
+    display: flex;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #3c5aa6;
+    text-align: center;
+    background-color: #3c5aa6;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    width: 200px;
+}
+
+.navImage{
+    margin: 16px 16px;
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+}
+
+.navLink{
+    background-color: white;
+    color: #c7a008;
+    margin: 6px;
+    border: solid white;
+    border-radius: 10px;
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    background-color: #c7a008;
+    color: white;
+    border: solid #c7a008;
+}
+
+.content{
+    flex-direction: column;
+    padding-left: 200px;
+}
+
+.sectionTitle{
+    color: white;
+    background-color: #3c5aa6;
+    border-radius: 5px;
+    margin: 16px 32px;
+    padding: 8px;
+    max-width: fit-content;
+    font-size: 30px;
+}
+
+.sectionImages{
+    height: 150px;
+    border: solid #3c5aa6;
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+    padding: 8px 0;
+}
+
+.imageRow{
+    display: flex;
+    gap: 32px;
+    padding: 0 32px;
+}
+
+.imageCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 12px;
+    }
+}
+
+.lowerSection{
+    display: flex;
+    padding: 0 32px;
+    gap: 32px;
+}
+
+hr{
+    margin: 0 32px;
+    background-color: #3c5aa6;
+}
+
+.lowerSectionParagraph{
+    
+}
+
+#charmander{
+    width: 300px;
+    height: 300px;
+    border: solid #3c5aa6;
+    border-radius: 10px;
+    object-fit: contain;
+    padding: 8px 0px;
+    margin: 14px 0;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    padding: 12px 0;
+}
+
+@media (max-width: 360px) {
+    body{
+        flex-direction: column;
+    }
+    nav{
+        position: static;
+        width: 100%;
+    }
+    .navImage{
+        display: none;
+    }
+    .content{
+        padding: 0;
+    }
+    .imageRow{
+        flex-direction: column;
+    }
+    
+    hr{
+        width: 100%;
+    }
+    .lowerSection{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #charmander{
+        max-width: 100%;
+        width: auto;        
+        height: 150px;
+    }
+    
+}
+

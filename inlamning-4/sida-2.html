@@ -1,0 +1,142 @@
+<!--
+    Kurs: Webbutveckling 1
+    Uppgift: Inlämning 4
+    Del: 2 (Om CSS)
+    Av: Josefin Svensson
+-->
+
+<!DOCTYPE html>
+<html lang="sv">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Om CSS</title>
+    </head>
+
+    <body style="background-color: #dcfce7">
+        <!--Meny-->
+        <nav style="background-color: black; color: white; text-align: center; padding-bottom: 16px;">
+            <p style="font-size: 30px;">
+                Meny
+            </p>
+            <a href="index.html" target="_self" style="display: block; color: inherit;">Startsida (om mig)</a>
+            <a href="sida-2.html" target="_self" style="display: block; color: inherit">Om CSS</a>
+            <a href="sida-3.html" target="_self" style="display: block; color: inherit">Mall för CSS</a>
+        </nav>
+        <h1
+            style="font-family: Arial, Helvetica, sans-serif; color: white; text-align: center; background-color: #14532d; border-style:double; padding: 5px;">
+            Om CSS</h1>
+        <!--Första sektionen-->
+        <h2
+            style="font-family: Arial, Helvetica, sans-serif; color: #16a34a; text-decoration-line: underline; margin-top: 36px;">
+            1. Vad
+            är CSS?</h2>
+        <h3
+            style="font-family: Arial, Helvetica, sans-serif; color: #22c55e; font-style: oblique; font-weight:800; margin-top: 36px;">
+            Varför finns CSS?</h3>
+        <p style="font-size: 18px;">
+            CSS är en förkortning för <i>Cascading Style Sheets</i> (känt som stilmall på svenska) och är en teknik som
+            används
+            för att ge webbsidor sitt utseende och stil. CSS kan inte fungera på egen hand för att utföra något på
+            webbsidor, utan är beroende av ett märkspråk som exempelvis HTML. Man använder HTML för att strukturera en
+            webbsidas innehåll medan CSS används för att sedan ge det innehållet ett utseende och formatering. För att
+            kunna formge innehållet genom exempelvis formatering av typsnitt, textstorlekar och färger behövs det sättas
+            upp regler i stilmallen som styr hur innehållet kommer att visas på webbsidan. Reglerna kan även inkludera
+            mer komplicerade saker så som layout och webbsidans responsivitet. CSS används helt enkelt för att göra
+            webbsidor vackra och snygga samt att de blir mer användarvänliga.
+        </p>
+        <h3
+            style="font-family: Arial, Helvetica, sans-serif; color: #22c55e;font-style: oblique; font-weight:800; margin-top: 36px;">
+            Hur
+            använder vi oss av CSS?</h3>
+        <p style="font-size: 18px;">
+            Som nämnt ovan består en stilmall av en eller flera CSS-regler som talar om hur ett HTML-element eller
+            elementgrupp ska presenteras. Varje regel består av två huvuddelar: en selektor och en eller flera
+            deklarationer. Selektorn anger vilket element som ska formateras och deklarationerna anger hur det ska
+            formateras genom att tilldela värden till olika egenskaper (ex. typsnitt, storlek och färg).
+        </p>
+        <p style="font-size: 18px;">
+            CSS är kaskadiskt, vilket innebär att om ett element får flera stilregler tilldelade kommer de att staplas i
+            en viss ordning. HTML-element ärver dessutom vissa CSS-regler från de element som de befinner sig inuti i,
+            om de inte har blivit tilldelade en specifik regel.
+        </p>
+        <p style="font-size: 18px;">
+            Det finns därefter tre olika sätt att implementera CSS:
+        </p>
+        <ul style="font-size: 18px;">
+            <li><i>Inline style</i> innebär att man använder attributet style i varje HTML-element i dokumentet. Denna
+                metod är
+                effektiv när du enbart vill styla ett enskilt element.</li>
+            <li><i>Internal style</i> innebär att man lägger in elementet style
+                i sidhuvudet (head). Denna metod är effektiv när man ska styla en enskild sida.</li>
+            <li><i>External style</i> innebär att man
+                länkar sin webbsida med en extern CSS-fil. Denna metod är effektiv när man ska styla ett större
+                projekt med flera sidor. Detta gör att man vid behov bara behöver ändra på ett ställe istället för
+                på flera olika för att exempelvis ändra en textstorlek. Att designen dessutom är separerad från
+                innehållet är bra för sökmotoroptimeringen. Detta då sökmotorn inte behöver gå igenom irrelevant
+                designkod. Det är rekommenderat att använda sig av denna metod.</li>
+        </ul>
+        <!--Andra sektionen-->
+        <h2
+            style="font-family: Arial, Helvetica, sans-serif; color: #16a34a; text-decoration-line: underline; margin-top: 36px;">
+            2. Det
+            finns olika versioner av CSS:</h2>
+        <h3
+            style="font-family: Arial, Helvetica, sans-serif; color: #22c55e; font-style: oblique; font-weight:800; margin-top: 36px;">
+            Vilka versioner finns det?</h3>
+        <p style="font-size: 18px;">
+            De versioner som finns är <b>CSS1</b>, <b>CSS2</b>, <b>CSS2.1</b>, <b>CSS3</b>.
+        </p>
+        <p style="font-size: 18px;">
+            <b>CSS1</b>: Detta är den första versionen av CSS som släpptes 1996. Den innehöll funktioner om relativt
+            enkel
+            formatering så som bakgrundsfärger, bakgrundsbilder, teckensnitt och justering av text.
+        </p>
+        <p style="font-size: 18px;">
+            <b>CSS2</b>: Denna version släpptes 1998. Den innehöll utökade möjligheter för layouten så som
+            positionering och
+            så kallade “floating elements, samt stöd för mediatyper och introduktion av andra egenskaper.
+        </p>
+        <p style="font-size: 18px;">
+            <b>CSS2.1</b>: Denna version är en revidering av CSS2 som innehöll en del fel och otydligheter. Den blev en
+            rekommendation från W3C år 2011.
+        </p>
+        <p style="font-size: 18px;">
+            <b>CSS3</b>: Detta är den senaste versionen av CSS och består av en samling moduler som var och en för sig
+            introducerar nya funktioner och möjligheter. Några av dessa är selektorer, bakgrunder och kanter, färger,
+            övergångar och animationer, responsiv webbdesign med flera. Fördelen med att versionen består av olika
+            moduler är att de kan utvecklas oberoende av varandra.
+        </p>
+        <p style="font-size: 18px;">
+            I dagsläget är <b>CSS4</b> under utveckling och kommer att innehålla förbättringar gällande
+            webbdesign-kapacitet,
+            responsiv design, variabla typsnitt samt förbättrade “grid”-system.
+        </p>
+        <h3
+            style="font-family: Arial, Helvetica, sans-serif; color: #22c55e; font-style: oblique; font-weight:800; margin-top: 36px;">
+            Varför finns det olika versioner? (Varför är det inte
+            bara en?)</h3>
+        <p style="font-size: 18px;">
+            Anledningen till det är för att CSS ständigt utvecklas i takt med den tekniska utvecklingen. Dels behövs nya
+            funktioner och möjligheter för att möta de ökande kraven inom webbutvecklingen, samtidigt som det möjliggör
+            för utvecklare att skapa bättre användarupplevelser. Dessutom kan en nyare version korrigera fel som
+            upptäckts i en tidigare version. Varje version av CSS bygger nämligen på den föregående.
+        </p>
+        <h3
+            style="font-family: Arial, Helvetica, sans-serif; color: #22c55e; font-style: oblique; font-weight:800; margin-top: 36px;">
+            Varför är det viktigt att veta vilken version som en viss
+            CSS-egenskap tillhör? (Kan detta påverka
+            webbplatsen?)</h3>
+        <p style="font-size: 18px;">
+            Det är viktigt att veta då vissa webbläsare kanske inte stödjer funktioner och egenskaper som finns i de
+            senare versionerna av CSS. Ex. om det är en egenskap som finns i en äldre version är det med största
+            sannolikhet säkert att webbläsaren stöder den versionen. Dock en risk med en äldre version är att de kan
+            innehålla säkerhetsrisker som har reviderats i en nyare version. Om inte den äldre versionen är kompatibel
+            med moderna standarder kan det öka risken för ex. intrång på webbplatsen. Därav är det också viktigt att
+            veta vilken CSS-egenskap som tillhör vilken version. Man bör dock sträva efter att använda en så ny version
+            som möjligt för att koda enligt den senaste standarden.
+        </p>
+
+    </body>
+
+</html>
