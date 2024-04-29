@@ -113,7 +113,7 @@ footer{
     padding: 12px 0;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     body{
         flex-direction: column;
     }
@@ -130,9 +130,9 @@ footer{
     .imageRow{
         flex-direction: column;
     }
-    
-    hr{
-        width: 100%;
+    .sectionTitle {
+        margin-left: auto;
+        margin-right: auto;
     }
     .lowerSection{
         flex-direction: column-reverse;
@@ -145,4 +145,3 @@ footer{
     }
     
 }
-
